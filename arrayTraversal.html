@@ -2,20 +2,25 @@
 <html lang="en">
 
 <head>
-    <script>
-        let numberArray = [7, 4, 6, 89, 5, 1, 8, 77, 4, 89, 6, 2]
-        const inputElement = document.getElementById('inputOne')
-        const clickHandler = () => {
 
-            alert('clicked')
-        }
-    </script>
     <title>Array Traversal</title>
 </head>
 
 <body>
     <input type="text" id="inputOne">
     <button onclick='clickHandler()'>Go</button>
+    <script>
+        let numberArray = [7, 4, 6, 89, 5, 1, 8, 77, 4, 89, 6, 2]
+        const clickHandler = () => {
+            const inputElement = document.getElementById('inputOne').value
+            console.log('clicked')
+            console.log(parseInt(inputElement))
+            if (parseInt(inputElement) === NaN) { alert('arey number daal yaar sahi') }
+            if (parseInt(inputElement) < 0) { alert('value entered is less than the array\'s length') }
+            else { alert(numberArray[inputElement]) }
+
+        }
+    </script>
 </body>
 
 </html>

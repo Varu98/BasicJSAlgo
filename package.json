@@ -1,0 +1,19 @@
+{
+  "name": "basicjsalgo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "arachnomesh.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Varu98/BasicJSAlgo.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Varu98/BasicJSAlgo/issues"
+  },
+  "homepage": "https://github.com/Varu98/BasicJSAlgo#readme"
+}

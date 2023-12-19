@@ -25,7 +25,7 @@ const arr = [
   [3, 4],
 ];
 
-console.log(arr.length);
+console.log(arr, arr.length);
 
 let rows = arr.length;
 let columns = arr[0].length;
@@ -34,11 +34,11 @@ const transposedArray = Array.from({ length: columns }, () =>
   new Array(rows).fill(0)
 );
 
-for (let i = 0; i < rows; i++) {
-  for (let j = 0; j < columns; j++) {
-    transposedArray[i][j] = arr[j][i];
+for (let r = 0; r < rows; r++) {
+  for (let c = 0; c < columns; c++) {
+    transposedArray[c][r] = arr[r][c];
   }
 }
 
-console.log(transposedArray);
+console.log(transposedArray, transposedArray.length);
 return transposedArray;

@@ -48,12 +48,12 @@ while (result.length < size) {
   for (let i = right; i >= left && result.length < size; i--) {
     result.push(arr[bottom][i]);
   }
-  bottom--;
+  bottom--; // 2 => 1
 
   for (let i = bottom; i >= top && result.length < size; i--) {
     result.push(arr[i][left]);
   }
-  left++;
+  left++; // 0 -> 1
 }
 
 console.log(result);

@@ -1,5 +1,5 @@
-function trapWater(arr) {
-  let n = arr.length;
+function trapWater(heights) {
+  let n = heights.length;
 
   if (n <= 2) return 0;
 
@@ -10,18 +10,18 @@ function trapWater(arr) {
   let rightMax = 0;
 
   while (left < right) {
-    if (arr[left] < arr[right]) {
-      if (arr[left] > leftMax) {
-        leftMax = arr[left];
+    if (heights[left] < heights[right]) {
+      if (heights[left] > leftMax) {
+        leftMax = heights[left];
       } else {
-        water = water + leftMax - arr[left];
+        water = water + leftMax - heights[left];
       }
       left++;
     } else {
-      if (arr[right] > rightMax) {
-        rightMax = arr[right];
+      if (heights[right] > rightMax) {
+        rightMax = heights[right];
       } else {
-        water = water + rightMax - arr[right];
+        water = water + rightMax - heights[right];
       }
       right--;
     }
